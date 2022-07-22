@@ -1,0 +1,1089 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Delicious Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Delicious - v4.7.1
+    * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    @*<section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
+            <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
+            <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+        </div>
+    </section>*@
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-tran">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <div class="logo me-auto">
+                <h1><a href="https://www.facebook.com/try.kuet">Try</a></h1>
+               
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+    </div>
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            
+
+            <li class="dropdown">
+                <a href="#menu" class="book-a-table-btn scrollto"><span>Projects</span> <i class="bi bi-chevron-down"></i> </a>
+                <ul>
+
+
+
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="StreamFileUpload" asp-action="Index">Request a donation project</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            @*<li><a class="nav-link scrollto" href="#specials">Sponsership</a></li>*@
+            <li><a class="nav-link scrollto" href="#events">Events</a></li>
+            <li><a class="nav-link scrollto" href="#chefs">Executives</a></li>
+            <li><a class="nav-link scrollto" href="#gallery">Media</a></li>
+            <li class="nav-item">
+                <a class="nav-link text-white" asp-area="" asp-controller="Clarify_donation" asp-action="Index">Clarify_Donation</a>
+            </li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            <li class="dropdown">
+                <a asp-controller="Bank_info" asp-action="Index" class="book-a-table-btn scrollto"><span>Donation</span> <i class="bi bi-chevron-down"></i> </a>
+                <ul>
+
+                    @*<li class="dropdown">
+                    <a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                    </ul>
+                </li>*@
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Bank_info" asp-action="Index">Bank information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Clarify_donation" asp-action="Index">Clarify donation</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a asp-controller="Admin" asp-action="Index" class="book-a-table-btn scrollto"><span>Admin info</span> <i class="bi bi-chevron-down"></i> </a>
+                <ul>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index">Donation info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Reg" asp-action="Index">Volunteer info</a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+    
+    @*<a href="#book-a-table" class="book-a-table-btn scrollto">Donate</a>*@
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    
+
+    <!-- ======= Hero Section ======= -->
+
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+                <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active" style="background-image: url(img/slide/slide1.jpeg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown"><span>Five Taka Meal</span><br />Inspiring a nation with food</h2>
+                                <p class="animate__animated animate__fadeInUp">We can make a strong relationship with underprivileged children through sharing food. We are selling the food for 1 Taka that they do not feel that they are begging.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our projects</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item" style="background-image: url(img/slide/volun.jpeg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Join With Us</h2>
+                                <p class="animate__animated animate__fadeInUp"> Join with us to inspire a nation with your supportive works by volunteering opportunity. We are looking for volunteers to work with us in office and field work. Get in touch today to find out new experience.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our projects</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item" style="background-image: url(img/slide/happy.jpeg);">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2 class="animate__animated animate__fadeInDown">Let's Sponsor a Child</h2>
+                                <p class="animate__animated animate__fadeInUp">Your contribution can provide an orphan child with the education, food, a safe environment to grow, and a secure place to live.</p>
+                                <div>
+                                    <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our projects</a>
+                                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("img/study.jpeg");'>
+                        <a href="https://youtu.be/7vbsPqUWA3g" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                    </div>
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+                        <div class="content">
+                            <h3><strong>We are team TRY</strong></h3>
+                            <h4>A crazy group of people trying to inspire the nation</h4>
+                            <p>
+                                Try is a club of KUET to inspire people of a nation. This organization is operated by 20 people with many more volunteers, who work together for the vision of free education, shelter for all, food for all.
+                            </p>
+                            <p class="fst-italic">
+                                Here are the things we do:
+                            </p>
+                            <ul>
+                                <li><i class="bx bx-check-double"></i> Collect donation for people in crisis </li>
+                                <li><i class="bx bx-check-double"></i> Fundraising for treatment of suffererers who are in urgent need</li>
+                                <li><i class="bx bx-check-double"></i> Sponsoring children </li>
+                                <li><i class="bx bx-check-double"></i> Fundraising for underprivileged people for start-up</li>
+                                <li><i class="bx bx-check-double"></i> Collecting unused clothes for people who can't cover themselves up </li>
+
+                            </ul>
+                            <p>
+                                If you think you will be able to help us in doing any of this task, we will be very grateful.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Whu Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Our <span>missions</span></h2>
+                    <p>There are some missions we want to fulfill collectively, through all the projects/works we are doing </p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="box">
+                            <span>01</span>
+                            <h4>Treatment</h4>
+                            <p>To ensure health care and free medicines to underprivileged people</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>02</span>
+                            <h4>Food </h4>
+                            <p> To ensure food for everyone </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mt-4 mt-lg-0">
+                        <div class="box">
+                            <span>03</span>
+                            <h4> Education</h4>
+                            <p>To create national treasure by offering free education </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Whu Us Section -->
+        <!-- ======= Menu Section ======= -->
+        <section id="menu" class="menu">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Check all of our <span>projects</span></h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="menu-flters">
+                            <li data-filter="*" class="filter-active">Show All</li>
+                            <li data-filter=".filter-starters">Urgent projects</li>
+                            <li data-filter=".filter-salads">Special projects</li>
+                            <li data-filter=".filter-specialty">Done projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row menu-container">
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <div class="menu-content">
+                            <a href="https://www.facebook.com/1590502034512735/posts/3280348622194726">Flood Relief Program</a>
+                        </div>
+                        <br />
+                        <div class="menu-ingredients">
+                            Around 13 lakhs of people were affected in Sylhet City,including five Upazilas. Surma and Kushiyara started flowing above the danger levels, cyclonic storm Asami worsened the situation.
+                            <br />
+                            <br />
+                            <div> <h5>1. Relief for 10 families: 3,500 taka</h5></div>
+                            <div><h5>2. Relief for 25 families: 8,750 taka </h5></div>
+                            <div><h5>3. Cooked food for 500 children: 14,000 taka</h5></div>
+                            <div> <h5>4. 2000 pieces water purification tablet: 3,000 taka </h5></div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-specialty">
+                        <div class="menu-content">
+                            <a href="https://www.facebook.com/page/1590502034512735/search/?q=zakat">Eid-Ul-Fitr Zakat Collection</a>
+                        </div>
+                        <br />
+                        <div class="menu-ingredients">
+                            <h5>Muslims who were to give zakat but couldn't find right people to give, were approached to collect the money, so money could be distributed among better hands.</h5>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <div class="menu-content">
+                            <a href="https://www.facebook.com/page/1590502034512735/search/?q=eid%20ul">Qurbani For Underprivileged People</a>
+                        </div>
+                        <br />
+                        <div class="menu-ingredients">
+                            Every year Muslims around the world offer sacrifices following the religious decree. At least one third of meat id gifted among the ones in need. we arrange qurbani on behalf of donors and feed hundreds of people.
+                            <br />
+                            <br />
+                            <div> <h5>1. A share of cow: 10,999 taka</h5></div>
+                            <div><h5>2. Full cow: 76,000 taka</h5></div>
+                            <div><h5>3. Goat: 15000 taka</h5></div>
+                        </div>
+
+
+                    </div>
+
+                    @*<div class="col-lg-6 menu-item filter-salads">
+                <div class="menu-content">
+                    <a href="#">Caesar Selections</a><span>$8.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem, deren, trataro, filede, nerada
+                </div>
+            </div>*@
+
+                    <div class="col-lg-6 menu-item filter-salads">
+                        <div class="menu-content">
+                            <a href="https://www.facebook.com/groups/try.general">Jute industry madrasa and orphanage</a>
+                        </div>
+                        <br />
+                        <div class="menu-ingredients">
+
+                            <div> <h5>1. Sponser an orphan for 3 months: 9000 taka</h5></div>
+                            <div><h5>2. Sponser an orphan for 1 month: 3000 taka</h5></div>
+                            <div><h5>3. Expense of one kid for a year: 35000 taka</h5></div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <div class="menu-content">
+                            <a href="https://www.facebook.com/try.kuet">Help Ctg Fire Victims</a>
+                        </div>
+                        <br />
+                        <div class="menu-ingredients">
+                            At least 49 people have been killed and more than 300 injured after a massive fire swept through BM container depot in Chittagong. More than half of the 100 patients admitted at different hospitals.
+                            <br />
+                            <br />
+                            <div> <h5>1. Help for treatment: 5,000 taka</h5></div>
+                            <div><h5>2. Cattle farm: 30,000 taka</h5></div>
+                            <div><h5>3. Small enterprise or grocery: 45,000 taka</h5></div>
+                        </div>
+
+                        @*<div class="menu-content">
+                    <a href="#book-a-table" class="btn-book animate__animated animate__fadeInUp scrollto"><h5>Donate</h5></a>
+                </div>*@
+                    </div>
+
+                    @*<div class="col-lg-6 menu-item filter-salads">
+                <div class="menu-content">
+                    <a href="#">Greek Salad</a><span>$9.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Fresh spinach, crisp romaine, tomatoes, and Greek olives
+                </div>
+            </div>*@
+
+                    <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+                <a href="https://www.facebook.com/try.kuet">Scholarship program</a>
+            </div>
+            <br />
+            <div class="menu-ingredients">
+                Free training for underprivileged students, free library for all kinds of users,direct financial help to poor students,inspiration and awareness activities.
+                <br />
+                <br />
+                <div> <h5>1. One college student for whole year:20,000 taka</h5></div>
+                <div> <h5> 2. One University student for whole year: 30,000 taka</h5></div>
+
+            </div>
+
+
+                </div>
+
+                @*<div class="col-lg-6 menu-item filter-specialty">
+                    <div class="menu-content">
+                        <a href="#">Start-up help </a>
+                    </div>
+                    <br />
+                    <div class="menu-ingredients">
+                        <h5>
+                            After the corona period, we tried to fundraise for people interested in start-ups
+                            like farming,cattling, we rasied around 5 lakhs taka.
+                        </h5>
+                    </div>
+                </div>*@
+
+              
+                <br />
+                <br />
+            </div>
+
+
+        </section><!-- End Menu Section -->
+        <marquee style="color:darkorange"><h1><i>Together, Let's make the world a better place, shall we?</i></h1></marquee>
+        <!-- ======= Specials Section ======= -->
+        <section id="specials" class="specials">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>So,How can you <span> help?</span></h2>
+                    <p><i><h5>JOIN WITH US</h5></i></p>
+                </div>
+                <br />
+                <br />
+
+                <div class="row">
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Volunteer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">sponsership</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Donations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Fight Covid</a>
+                            </li>
+                            @*<li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-5"></a>
+                            </li>*@
+                        </ul>
+                    </div>
+                    <div class="col-lg-9 mt-4 mt-lg-0">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Be our volunteer</h3>
+                                        <p class="fst-italic">'Try' would be very grateful to have you as a volunteer</p>
+                                        <br />
+                                        <p class="nav-item">
+                                            <a class="book-a-table-btn scrollto" asp-area="" asp-controller="Volunteer" asp-action="Index">Register as a volunteer</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/volu.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-2">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Help us sponsor a child</h3>
+                                        <p class="fst-italic">Support us with your donations to create a better future</p>
+                                        <br />
+                                        <p class="nav-item">
+                                            <a class="book-a-table-btn scrollto" asp-area="" asp-controller="Bank_info" asp-action="Index">Sponsor</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/spon.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Donate for people</h3>
+                                        <p class="fst-italic"> You can always donate at try to be with people in crisis</p>
+                                        <br />
+                                        <p class="nav-item">
+                                            <a href="#menu" class="book-a-table-btn scrollto">See projects</a>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/donate.jpeg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-4">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Fighting covid off</h3>
+                                        <p class="fst-italic">Together we can fight off covid by helping the people who went under poverty line during this whole lockdown,also arrange works for them and raise awareness</p>
+
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/covid.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            @*<div class="tab-pane" id="tab-5">
+                                <div class="row">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                                        <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="img/specials-5.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>*@
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Specials Section -->
+        <!-- ======= Events Section ======= -->
+        <br />
+        <br />
+        <section id="events" class="events">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>These are <span>events</span> we are working on</h2>
+                </div>
+
+                <div class="events-slider swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="row event-item">
+                                <div class="col-lg-6">
+                                    <img src="img/add1.jpeg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                    <h3>Helping a mother</h3>
+                                    <div class="price">
+                                        <p><span>7,000,000-/</span></p>
+                                    </div>
+                                    <p class="fst-italic">
+                                        Mother of jubayer hossain(LE-16,kUET) is severly ill, please come forward to help her.
+
+                                        <ul>
+                                            <li>
+                                                <i class="bi bi-check-circle"></i> Bkash 01818461433 (Fardin 2K18) 01760974543 (Ikram 2K18) 01686-234800 (Ananda 2K18)
+
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-check-circle"></i> Nagad 01818461433 (Fardin 2K18) 01764369501 (Sium 2K18) 01686-234800 (Ananda 2K18)
+
+                                            </li>
+                                            <li><i class="bi bi-check-circle"></i>  Rocket 017643695015 (Sium 2K18) 013047377503 (Ranjan 2K18) 01686-2348009 (Ananda 2K18)</li>
+                                        </ul>
+
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="row event-item">
+                                <div class="col-lg-6">
+                                    <img src="img/bonna.jpeg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                    <h3>Sunamganj flood</h3>
+                                    <div class="price">
+                                        <p><span>1,040,000-/</span></p>
+                                    </div>
+                                    <p class="fst-italic">
+                                        Sylhet is in danger today. This majestic city is facing a catastrophic flood, and the situation is worsening. As days pass, Many parts remain unreachable due to the high tide of floodwater.
+                                        So we request everyone to come forward from their respective places and help rescue the people of Sylhet, Sunamganj, and Netrokona.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="bi bi-check-circle"></i> Bkash 01818461433 (Fardin 2K18) 01760974543 (Ikram 2K18) 01686-234800 (Ananda 2K18)
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-check-circle"></i> Nagad 01818461433 (Fardin 2K18) 01764369501 (Sium 2K18) 01686-234800 (Ananda 2K18)
+
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>  Rocket 017643695015 (Sium 2K18) 013047377503 (Ranjan 2K18) 01686-2348009 (Ananda 2K18)</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="row event-item">
+                                <div class="col-lg-6">
+                                    <img src="img/add3.jpeg" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                                    <h3>Activity in KUET</h3>
+                                    <div class="price">
+                                        <p><span>16,000-/</span></p>
+                                    </div>
+                                    <p class="fst-italic">
+                                        Senior helper of rokeyal hall,kuet has been helped for her eye surgery.
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <i class="bi bi-check-circle"></i> Bkash 01818461433 (Fardin 2K18) 01760974543 (Ikram 2K18) 01686-234800 (Ananda 2K18)
+
+                                        </li>
+                                        <li>
+                                            <i class="bi bi-check-circle"></i> Nagad 01818461433 (Fardin 2K18) 01764369501 (Sium 2K18) 01686-234800 (Ananda 2K18)
+
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>  Rocket 017643695015 (Sium 2K18) 013047377503 (Ranjan 2K18) 01686-2348009 (Ananda 2K18)</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End Events Section -->
+         @*======= Book A Table Section =======*@ 
+        <section id="book-a-table" class="book-a-table">
+            <div class="container">
+
+                <div class="section-title" style="border:double">
+                    <h2>To donate, <span>first check the availabilities</span></h2>
+                    <br />
+                    <br />
+                    <p>Here are the bank informations you need to donate money.</p>
+
+
+                    <p class="nav-item">
+                        <a class="book-a-table-btn scrollto" asp-area="" asp-controller="Bank_info" asp-action="Index">Bank information</a>
+                    </p>
+                    <br />
+                    <h2> <span>If you donated already,</span>remember to clarify here.</h2>
+                    <br />
+                    <br />
+                    <p>Clicking here, you will get a form, fill up with necessary data.</p>
+                    <p class="nav-item">
+                        <a class="book-a-table-btn scrollto" asp-area="" asp-controller="Clarify_donation" asp-action="Index">Clarify donation</a>
+                        <br />
+                        <br />
+                        <br />
+                        <h3><i>Even a small donation of yours can make a difference. Thank you.</i></h3>
+                </div>
+                
+
+                @*<form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 form-group mt-3">
+                    <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                    <div class="validate"></div>
+                </div>
+            </div>
+            <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>*@
+
+            </div>
+        </section><!-- End Book A Table Section -->
+        <!-- ======= Gallery Section ======= -->
+        <section id="gallery" class="gallery">
+            <div class="container-fluid">
+
+                <div class="section-title">
+                    <h2>Some photos from <span>the events of TRY</span></h2>
+                    <p> </p>
+                </div>
+
+                <div class="row g-0">
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery1.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery1.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery2.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery2.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery3.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery3.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery4.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery4.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery5.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery5.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery6.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery6.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery7.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery7.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="img/gallery/gallery8.jpeg" class="gallery-lightbox">
+                                <img src="img/gallery/gallery8.jpeg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Gallery Section -->
+        <!-- ======= Chefs Section ======= -->
+        <section id="chefs" class="chefs">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Our <span>Executives</span></h2>
+                    <p>
+                        "ট্রাই কে ভলান্টিয়ারি সংগঠন কিংবা সোসাল সার্ভিস ক্লাব ও বলা যায়। ট্রাই নামের পিছনেই আসলে এর অন্তর্নিহিত অর্থ লুকায়িত আছে। আমরা যারা ট্রাই এর ভলান্টিয়ার, তারা চেষ্টা করি মানুষের কষ্ট লাঘব করতে। শীতবস্ত্র প্রদান, বন্যা কবলিত স্থানে ত্রাণ প্রদান, রোজার সময় দরিদ্রদের সাথে ইফতার করা ছাড়াও প্রতি মাসে ৩ থেকে ৪জন মানুষকে সাহায্য করে থাকি আমরা। কয়েকবার এতিম বাচ্চাদের মধ্যে কাপড় এবং খাবার বিতরণও করা হয়।
+                        আমাদের এসব সাহায্য'র টাকার প্রধান উৎস আমাদের হলের রুমে গিয়ে করা কালেকশন,হল ডিউজের সাথে কেটে রাখা টাকা এবং এলামনি ভাই-আপুদের প্রদানকৃত অর্থ।
+                        কুয়েট প্রশাসন তথা সর্বসাধারণের কাছে ট্রাই একটি বিশ্বাসযোগ্য সংগঠন। এই বিশ্বাসের মর্যাদা ট্রাই এর প্রতিটি সদস্য আজীবন ধরে রেখেই কাজ করে।"
+
+
+
+                    </p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="img/chefs/ex1.jpeg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Zihadul haque</h4>
+                                <span>President</span>
+                                <div class="social">
+
+                                    <a href="https://www.facebook.com/xihad.promise"><i class="bi bi-facebook"></i></a>
+
+                                    <a href="https://www.linkedin.com/company/try-kuet/?originalSubdomain=bd"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="img/chefs/ex2.jpeg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Supta Barua</h4>
+                                <span>Assiatant secretary</span>
+                                <div class="social">
+
+                                    <a href="https://www.facebook.com/luna.supta"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://www.linkedin.com/company/try-kuet/?originalSubdomain=bd"> <i class="bi bi-instagram"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="member">
+                            <div class="pic"><img src="img/chefs/ex3.jpeg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Mehedi hasan</h4>
+                                <span>Secretary</span>
+                                <div class="social">
+
+                                    <a href="https://www.facebook.com/mehedi0121/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_follower_visibility_disclosure=0"><i class="bi bi-facebook"></i></a>
+
+                                    <a href="https://www.linkedin.com/company/try-kuet/?originalSubdomain=bd"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Chefs Section -->
+        <!-- ======= Testimonials Section ======= -->
+        <!--<section id="testimonials" class="testimonials">
+        <div class="container position-relative">
+
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div>-->
+        <!-- End testimonial item -->
+        <!--<div class="swiper-slide">
+        <div class="testimonial-item">
+            <img src="img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+        </div>
+    </div>-->
+        <!-- End testimonial item -->
+        <!--<div class="swiper-slide">
+        <div class="testimonial-item">
+            <img src="img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+        </div>
+    </div>-->
+        <!-- End testimonial item -->
+        <!--<div class="swiper-slide">
+        <div class="testimonial-item">
+            <img src="img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+        </div>
+    </div>-->
+        <!-- End testimonial item -->
+        <!--<div class="swiper-slide">
+        <div class="testimonial-item">
+            <img src="img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+        </div>
+    </div>-->
+        <!-- End testimonial item -->
+        <!--</div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>-->
+        <!-- End Testimonials Section -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2><span>Contact</span> Us</h2>
+                    <p> This is the place where you can contact us.</p>
+                </div>
+            </div>
+
+            @*<div class="map">
+                <iframe style="border:0; width: 100%; height: 350px;" src="" frameborder="0" allowfullscreen></iframe>
+            </div>*@
+            <div class="map">
+                <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.4112414042843!2d89.50106101485153!3d22.89819773501613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9bd0a54261cf%3A0x330f51a8cac7dd05!2sStudent%20Welfare%20Center%20(SWC)!5e0!3m2!1sen!2sbd!4v1657616304352!5m2!1sen!2sbd" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="container mt-5">
+
+                <div class="info-wrap">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 info">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Location:</h4>
+                            <p>Student welfare center<br>KUET,Khulna</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="bi bi-clock"></i>
+                            <h4>Open Hours:</h4>
+                            <p>Sunday-Friday<br>10:00 AM - 8.00 PM</p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email: Try.kuet@gmail.com</h4>
+                            <p><br></p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                            <i class="bi bi-phone"></i>
+                            <h4>Call:</h4>
+                            <p>01792-015332<br>01755-391613</p>
+                        </div>
+                    </div>
+                </div>
+
+                @*<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>*@
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Try</h3>
+            <p>Spread Happiness</p>
+            <div class="social-links">
+       
+                <a href="https://www.facebook.com/try.kuet" class="facebook"><i class="bx bxl-facebook"></i></a>
+               
+                <a href="https://www.linkedin.com/company/try-kuet/?originalSubdomain=bd" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; Copyright <strong><span>Try</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
+                Designed by <a href="https://www.linkedin.com/in/mahjabin-hossain-oishi-bb4775185/">Mahjabin hossain</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

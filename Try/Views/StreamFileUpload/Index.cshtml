@@ -1,0 +1,27 @@
+<h1>Stream File Upload</h1>
+
+<hr />
+<h5 style="color:blueviolet"><i>You can always approach us for a donation request, in a proper way with a donation proposal. <br />We will try to help you giving you the platform where you can be helped. Drop your proposal / authenticity proof here for us to review. </i> </h5>
+<br />
+<br />
+<div>
+    <form asp-route="StreamFileUpload/Index" enctype="multipart/form-data" method="POST">
+        <input type="file" name="file" />
+        <button type="submit">Upload File</button>
+    </form>
+</div>
+
+
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert" style="margin-top:20px">
+        @ViewBag.Message
+    </div>
+}
+<br />
+<br />
+
+<h6>You may also mail us on <a href="https://www.hossain1807061@stud.kuet.ac.bd">GMAIL_ID</a></h6>
+
+
